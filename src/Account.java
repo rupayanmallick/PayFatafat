@@ -24,5 +24,18 @@ public abstract class Account {
         }
     }
     public abstract void withdraw(BigDecimal amount);
+    //getters
+    public BigDecimal getBalance(){
+        return this.balance;
+    }
+    protected void updateBalance(BigDecimal newBalance){
+        this.balance = newBalance;
+    }
+    public String getId(){
+        return this.id;
+    }
+    public String getOwnerName(){
+        return this.ownerName;
+    }
 
 }
